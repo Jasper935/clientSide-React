@@ -1,0 +1,31 @@
+.reviews {
+    text-align: center;
+    background: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding-top: 100px;
+    background:  linear-gradient(#f1d1d1, #9198e5);
+    background-size: cover;
+
+    
+  }
+  .left{
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-right: 1px solid #ced4da; */
+  }
+  
+  .right{
+    width: 50%;
+    height: fit-content;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }

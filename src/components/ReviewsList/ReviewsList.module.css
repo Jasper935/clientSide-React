@@ -1,0 +1,44 @@
+.list{
+    width: 90%;
+    padding: 50px 0;
+    padding-top: 100px;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(135, 184, 228); 
+    height: 50px;
+    font-weight: 600;
+}
+.item{
+    width: 100%;
+    min-height: 50px;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.item:nth-child(odd){
+    background-color: rgb(232, 235, 241);
+}
+.text{
+    width: 30%;
+    padding: 0 10px;
+    margin: 0;
+    padding: 20px 0;
+}
+.icon{
+    background-image: url('../../images/del.svg');
+    
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+
