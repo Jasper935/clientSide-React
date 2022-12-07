@@ -17,7 +17,7 @@ import { useNavigate } from "react-router-dom";
 import { getToken, getStatus } from "../../redux/auth/auth-selectors";
 import { Notification } from "../../components/Notification/Notification";
 import css from "./Login.module.css";
-import { setMessage } from "../../redux/auth/auth-slice";
+// import { setMessage } from "../../redux/auth/auth-slice";
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

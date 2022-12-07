@@ -3,14 +3,14 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { Reviews } from './pages/Reviews/Reviews';
-import { Registration } from './pages/Registration/Registration';
+// import { Registration } from './pages/Registration/Registration';
 import { Login } from './pages/Login/Login';
-import { useSelector } from 'react-redux';
-import { getToken } from './redux/auth/auth-selectors';
+// import { useSelector } from 'react-redux';
+// import { getToken } from './redux/auth/auth-selectors';
 //----------------------------------------
 
 function App() {
- const token =useSelector(getToken)
+//  const token =useSelector(getToken)
 
 
 

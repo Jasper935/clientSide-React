@@ -2,11 +2,11 @@ import css from "./Notification.module.css";
 import svg from "../../images/symbol-defs.svg";
 import { useEffect, useState } from "react";
 
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 import { getMessage } from "../../redux/auth/auth-selectors";
-import { setMessage } from "../../redux/auth/auth-slice";
+// import { setMessage } from "../../redux/auth/auth-slice";
 export const Notification = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const [currentclass, setCurrentClass] = useState(css.notification);
 
@@ -22,6 +22,7 @@ export const Notification = () => {
     if (message) {
       getClassName();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [message]);
   return (
     <div className={currentclass}>
