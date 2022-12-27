@@ -8,7 +8,7 @@ import {
 } from "../../redux/reviews/reviews-operations";
 import Notiflix from "notiflix";
 import { useDispatch, useSelector } from "react-redux";
-import { getMessage, getToken } from "../../redux/auth/auth-selectors";
+import { getMessage, getToken, getStatus, getUserEmail } from "../../redux/auth/auth-selectors";
 
 import { getReviewsList } from "../../redux/reviews/reviews-selectors";
 // import axios from "axios";
@@ -18,11 +18,12 @@ export const ReviewsList = ({ reload }) => {
   const rewiews = useSelector(getReviewsList);
   const message = useSelector(getMessage);
   const token = useSelector(getToken);
+  const email = useSelector(getUserEmail);
 
   useEffect(() => {
     axios.defaults.headers.common.Authorization = token;
     dispatch(getReviews());
-
+console.log(email);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reload]);
 
@@ -46,9 +47,7 @@ export const ReviewsList = ({ reload }) => {
                   dispatch(deleteReview(ID));
                   dispatch(getReviews());
                   Notiflix.Notify.success(message);
-                  // fetchReviews().then((res) => {
-                  //   setList(res.data);
-                  // });
+                 
                 }}
               ></div>
             </li>

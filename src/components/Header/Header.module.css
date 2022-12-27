@@ -27,9 +27,23 @@ background-image: url('https://images.unsplash.com/photo-1670079302709-6d5f10516
     fill: white;
     
 }
-
-
-
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userIcon{
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+    fill: wheat;
+}
+.welcome{
+    height: 100%;
+    color: wheat;
+    text-align: center;
+    margin: 0;
+}
 .exit{
     width: 35px;
     height: 35px;

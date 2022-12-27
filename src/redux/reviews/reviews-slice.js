@@ -15,6 +15,10 @@ const reviewsSlice = createSlice({
             
            state.reviews = payload
         },
+        [getReviews.rejected]: (state, { payload }) => {
+            console.log(payload);
+          
+        },
         [addReview.fulfilled]: (state, { payload }) => {
             // console.log('payload', payload);
         //    state.reviews = payload

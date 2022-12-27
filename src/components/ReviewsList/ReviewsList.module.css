@@ -8,9 +8,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(135, 184, 228); 
+    background-color: #0d6efd; 
     height: 50px;
     font-weight: 600;
+    color: white;
+    padding-right: 25px;
 }
 .item{
     width: 100%;

@@ -12,7 +12,7 @@ export const getReviews = createAsyncThunk("reviews/get", async (token) => {
         return data
 
     } catch (error) {
-        console.log(error);
+        // return error.response;
     }
 })
 
@@ -25,7 +25,7 @@ export const addReview = createAsyncThunk("/reviews/add", async ({ obj, token })
 
         return data
     } catch (error) {
-        console.log(error);
+        return error
     }
 })
 

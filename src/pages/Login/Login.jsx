@@ -35,7 +35,7 @@ export const Login = () => {
   //   const email = useSelector(getUsername);
   const theme = createTheme();
   useEffect(() => {
-    console.log(token);
+    
     if (token) {
       navigate("/reviews");
     }
